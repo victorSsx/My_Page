@@ -1,7 +1,7 @@
 function sim(){
         alert(' 🫵😼 VOCÊ MESMO, MANDA UM OII NO MEU DIRECT.');
         //redireciona para um URL após clicar no sim
-        location.href = "https://www.instagram.com/direct/t/17850178652648151/";
+        location.href = "https://instagram.com/_meu_nome2000?igshid=OGQ5ZDc2ODk2ZA==";
     }
     
     function desvia(btn){
