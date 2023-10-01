@@ -1,0 +1,40 @@
+#conteudo{
+    background: #342e2e39;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.btn{
+    background: black;
+    color: white;
+    border: none;
+    padding:  10px;
+    width: 80px;
+    border-radius: 5px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h2{
+    color: rgba(255, 255, 255, 0.434);
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./image/YW.gif');
+    background-size: cover;
+    animation: moveBackground 20s linear infinite;
+}
+.sumir{
+    display: none;
+}
