@@ -1,7 +1,7 @@
 function sim(){
-        alert(' CHAMA NA DM 🫶.');
+        alert(' ♥️.');
         //redireciona para um URL após clicar no sim
-        location.href = "https://instagram.com/_meu_nome2000?igshid=OGQ5ZDc2ODk2ZA==";
+        location.href = "";
     }
     
     function desvia(btn){
