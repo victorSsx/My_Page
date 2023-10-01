@@ -1,7 +1,7 @@
 function sim(){
-        alert(' ♥️.');
+        alert('♥️');
         //redireciona para um URL após clicar no sim
-        location.href = "";
+        location.href = "https://youtu.be/lJBcZHzgD7s?si=na0svsYKE7X_t2Fh";
     }
     
     function desvia(btn){
