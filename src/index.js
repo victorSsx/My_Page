@@ -7,7 +7,7 @@ const perguntas = [
 const textosBotoes = [
     "Eu escolho sem medo! 😈",
     "Pode mandar! 🔥",
-    "Tô pronto pra tudo! 😏",
+    "Tô pronto(a) pra tudo! 😏",
     "Eu me entrego 😜🍑💦"
 ];
 const textosNegacao = [
