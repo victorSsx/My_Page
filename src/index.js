@@ -1,16 +1,45 @@
-function sim(){
-        alert('♥️');
-        //redireciona para um URL após clicar no sim
-        location.href = "https://youtu.be/lJBcZHzgD7s?si=na0svsYKE7X_t2Fh";
+const perguntas = [
+    "Você tem coragem de escolher?",
+    "Vai encarar esse desafio?",
+    "Topa se arriscar nessa escolha?",
+    "Prefere me dar o cu ou perder a vida?"
+];
+const textosBotoes = [
+    "Eu escolho sem medo! 😈",
+    "Pode mandar! 🔥",
+    "Tô pronto pra tudo! 😏",
+    "Eu me entrego 😜🍑💦"
+];
+const textosNegacao = [
+    "Não!",
+    "Prefiro sobreviver 😅",
+    "Deixa pra lá... 🏃‍♂️",
+    "Jamais! Minha vida vale mais 😂"
+];
+let etapa = 0;
+
+function sim() {
+    if (etapa < perguntas.length - 1) {
+        etapa++;
+        document.getElementById('pergunta').textContent = perguntas[etapa];
+        document.getElementById('btn-cu').textContent = textosBotoes[etapa];
+        document.getElementById('btn-negacao').textContent = textosNegacao[etapa];
+    } else {
+        alert('Agora não tem mais volta... Se tiver coragem, me chama no privado e vamos ver até onde você aguenta! 😏🔥🍑');
+        location.href = "https://www.youtube.com/watch?v=hIZ40ehGu-U";
     }
-    
-    function desvia(btn){
-        //btn declarado na função
-        btn.style.position = 'absolute';
-        btn.style.bottom = geraPosicao(10, 90);
-        btn.style.left = geraPosicao(10, 90);
-        console.log('Opa, desviei... hehe');
-    }
-    function geraPosicao(min, max) {
-        return (Math.random() * (max - min) + min + "%");
-    }
+}
+
+function desvia(btn){
+    btn.style.position = 'absolute';
+    btn.style.bottom = geraPosicao(10, 90);
+    btn.style.left = geraPosicao(10, 90);
+    console.log('Opa, desviei... hehe');
+}
+function geraPosicao(min, max) {
+    return (Math.random() * (max - min) + min + "%");
+}
+function fecharAlerta() {
+    document.getElementById('alerta-volume').style.display = 'none';
+    document.getElementById('musica').play();
+}
